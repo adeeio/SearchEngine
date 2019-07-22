@@ -22,15 +22,12 @@ function searchCountries() {
     
 function showCountriesList(resp) {
     var response = resp[0];
-
     countriesList.innerHTML = '';
     resp.forEach(function(item){
         var check = loadAll(response);
         var liEl = document.createElement('li');
-        liEl.innerHTML = item.check;
+        liEl.innerHTML = check;
         countriesList.appendChild(liEl);
-        
-        console.log(check);
     });
    
 }
