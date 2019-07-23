@@ -9,6 +9,17 @@ body {
   text-align: center;
 }
 
+.engine-title, .engine-subtitle {
+  text-transform: uppercase;
+  color: #15afc4;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.engine-subtitle {
+  margin: 10px 0;
+}
+
 .flag {
   height: 120px;
   width: 120px;
@@ -70,7 +81,6 @@ body {
 .output {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
   width: auto;
 }
 
@@ -80,6 +90,15 @@ body {
 
 h3 {
   padding: 5px 0;
+}
+
+@media (max-width: 799px) {
+  .output {
+    width: auto;
+  }
+  .box {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,8 +23,9 @@ function searchCountries() {
 function showCountriesList(resp) {
     var response = resp[0];
     countriesList.innerHTML = '';
+    
     resp.forEach(function(item){
-        var check = loadAll(response);
+        var check = loadAll(item);
         var liEl = document.createElement('li');
         liEl.innerHTML = check;
         countriesList.appendChild(liEl);

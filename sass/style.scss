@@ -9,6 +9,18 @@ body {
     text-align: center;
 }
 
+.engine-title {
+    text-transform: uppercase;
+    color: rgb(21, 175, 196);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.engine-subtitle {
+    @extend .engine-title;
+    margin: 10px 0;
+}
+
 .flag {
     height: 120px;
     width: 120px;
@@ -69,7 +81,6 @@ body {
 .output {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
     width: auto;
     li {
         list-style-type: none;
@@ -78,4 +89,14 @@ body {
 
 h3 {
     padding: 5px 0;
+}
+
+@media (max-width: 799px) {
+    .output {
+        width: auto;
+    }
+
+    .box {
+        width: 400px;
+    }
 }
