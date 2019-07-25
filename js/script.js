@@ -10,6 +10,9 @@ function searchCountries() {
     if (!countryName.length) {
         countryName = 'Poland';
     }
+    else if(!isNaN(countryName)){
+        return;
+    }
 
     fetch(url + countryName)
         .then(function (resp) {
