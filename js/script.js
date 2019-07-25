@@ -21,7 +21,6 @@ function searchCountries() {
 
     
 function showCountriesList(resp) {
-    var response = resp[0];
     countriesList.innerHTML = '';
     
     resp.forEach(function(item){
